@@ -71,11 +71,13 @@ const App = () =>{
           jsonLocalStorage.setItem('favorites', nextFavorites);
         }
 
+
         return(
           <div>
             <Title>{counterTitle}고양이 짤방 만들기</Title>
             <Form updateMainCat={updateMainCat} />
             <MainCard img={maincat} onHeartClick={handleHeartClick} alreadyFavorite={alreadyFavorite}/>
+      
             <Favorites favorites={favorites} />
           </div>  
 
